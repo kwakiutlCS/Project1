@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
@@ -10,60 +9,74 @@
 
 	<ui:composition template="/template/commonLayout.xhtml">
 		<ui:define name="content">
-		<div class="descriçao col-md-12 experiencia">		
-		<div class="row">
-			<div class="col-md-12">
-				<h1 class="titulo">Esferas de aço para colisão</h1>
+			<div class="descriçao col-md-12 experiencia">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="titulo">Esferas de aço para colisão</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="historia">
+							<h3>Um pouco de história</h3>
+							<p>Devido à relevância da termodinâmica na ciência e na
+								tecnologia, a sua história está intimamente ligada ao
+								desenvolvimento da mecânica clássica. Os fenómenos de
+								transferência de energia por calor foram estudados
+								exaustivamente nos séculos XVII e XVIII. Já se tentou, por
+								diversas vezes, localizar a origem desta demonstração, porém,
+								nunca se conseguiu concluir sobre a identificação do autor desta
+								experiência. Talvez ela remonte aos tempos pré-históricos e à
+								descoberta do fogo...</p>
+
+
+
+
+
+						</div>
+
+						<div class="material">
+							<h3>Material</h3>
+							<ul>
+								<li>Duas esferas de metal.</li>
+								<li>Folha de papel branco.</li>
+								<li>Folha de alumínio.</li>
+								<li>Lupa</li>
+
+
+
+
+							</ul>
+						</div>
+
+						<div class="montagem">
+							<h3>Montagem</h3>
+							<ul>
+								<li>Coloca as esferas de aço afastadas de cerca de um metro
+									<b>(figura 1)</b>.
+								</li>
+
+							</ul>
+							<figure>
+								<h:graphicImage url="/resources/images/Colisao.png"
+									alt="Figura 1" />
+
+								<figcaption>
+									<span>Figura 1</span> - Montagem experimental
+								</figcaption>
+							</figure>
+
+						</div>
+
+					</div>
+				</div>
+
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="historia">
-					<h3>Um pouco de história</h3>
-					<p>Devido à relevância da termodinâmica na ciência e na tecnologia, a sua história está intimamente ligada ao desenvolvimento da mecânica clássica. Os fenómenos de transferência de energia por calor foram estudados exaustivamente nos séculos XVII e XVIII. Já se tentou, por diversas vezes, localizar a origem desta demonstração, porém, nunca se conseguiu concluir sobre a identificação do autor desta experiência. Talvez ela remonte aos tempos pré-históricos e à descoberta do fogo...</p>
-					
-
-
-	
-				
-				</div>
-
-				<div class="material">
-					<h3>Material</h3>
-						<ul>
-							<li>Duas esferas de metal.</li>
-							<li>Folha de papel branco.</li>
-							<li>Folha de alumínio.</li>
-							<li>Lupa</li>
-							
-		
-							
-							
-						</ul>
-				</div>
-				
-				<div class="montagem">
-					<h3>Montagem</h3>
-					<ul>
-						<li>Coloca as esferas de aço afastadas de cerca de um metro <b>(figura 1)</b>.</li>
-						
-					</ul>
-					<figure>
-						<img style="max-width:400px;" src="../images/Colisao.png" alt="Figura 1">	</img>
-						<figcaption><span>Figura 1</span> - Montagem experimental</figcaption>
-					</figure>
-					
-				</div>
-				
-			</div>
-		</div>
-		
-		</div>
 
 		</ui:define>
 
-		
-		
+
+
 	</ui:composition>
 
 </h:body>

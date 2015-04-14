@@ -1,0 +1,227 @@
+
+body {
+	background-color: #51504D;
+}
+
+
+a:active, a:hover, a:visited, a:link {
+	text-decoration:none;
+}
+
+/*span.headingLink {
+	color: #bbb;
+}*/
+
+
+ul>li {
+	list-style-type: none;
+}
+
+/*.container-fluid> div.navbar-default {
+	background: #6A943F;
+}*/
+
+ /*menu lateral titulo */
+.leftSideHeading {
+	background: #6A943F;
+	line-height: 35px;
+	padding: 0px 10px;
+}
+
+/*menu lateral link */
+.leftSideHeading > a {
+	font-weight: bold;
+	color: #fff;
+	border-radius: 6px;
+	padding: 3px 5px;
+}
+
+/* menu lateral link (hover) */
+.leftSideHeading > a:hover {
+	color:#6A943F;
+	background-color: #fff;	
+}
+
+/* impede selecao da lista atual do menu navegacao */
+.leftSideHeading > a.currentList:hover {
+	background-color: #6A943F;
+	color: #fff;
+	cursor: default;
+}
+
+
+/* listas navegaçao */
+ul.lista {
+	border: 1px solid #6A943F;
+	background-color: #fff;
+	
+}
+
+/* elementos da lista */
+ul.lista > li > a {
+	color: #777;
+}
+ul.lista > li > a:hover {
+	color: #000;
+}
+
+ul.lista > li {
+	margin: 8px 0 8px -15px;
+}
+
+
+
+
+/* A REVER */
+.opcoes_temas > ul > li, .menu_sessoes > ul > li, .menu_ideias > ul > li {
+	margin:10px 0;
+	box-shadow: 0px 0px 1px 1px #F00;
+}
+
+.opcoes_temas > ul, .menu_sessoes > ul {
+	padding: 0;
+}
+
+.opcoes_temas, .menu_sessoes {
+	margin-top: -10px;
+}
+
+
+/* fundo branco do texto(descricao) */
+div.experiencia, div.main {
+	background-color: #fff;
+        border: 1px solid #d1d1aa;
+	box-shadow: 0px 0px 1px 1px #d1d1aa;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+/* tamanho linha do fundo branco  */
+.experiencia {
+	line-height: 30px;
+}
+
+/* titulo experiencias */
+h1.titulo {
+	font-weight: 700;
+	text-align: center;
+}
+
+/* figuras */
+figure {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+figure img {
+	display: block;
+	margin: auto;
+	overflow: hidden;
+	width: 80%;
+	max-width: 500px;
+}
+
+/* legenda */
+figcaption{
+	text-align: center;
+}
+
+/* margem entre seccoes de texto da experiencias */
+.experiencia .historia, .experiencia .material {
+	margin-bottom: 50px;
+}
+
+/* titulos das seccoes de texto das experiencias */
+.experiencia h3 {
+	color: #E47D00;
+}
+
+
+
+/* barra da navegacao */
+nav.navbar-default.navbar {
+	background-color: #6A943F;
+	background-image: none;
+	border: 1px solid #6A943F;
+}
+
+/* links da barra */
+.navbar-default ul.navbar-nav > li > a, .navbar-default ul.navbar-nav > li > a:focus {
+	color: #fff;
+	font-weight: bold;
+	padding: 3px 5px;
+	margin: 12px 10px;
+	border-radius: 6px;
+}
+
+/* links da barra (hover) */
+.navbar-default ul.navbar-nav > li > a:hover {
+	background-color: #fff;
+	color: #6A943F;
+}
+
+/* link activo da barra de navegacao */
+.navbar-default ul.navbar-nav > li.active {
+	background-color: #fff;
+}
+
+/* override do bootstrap (link activo) */
+.navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #6A943F;
+	background-color: #fff;
+	background-image: none;
+	box-shadow: none;
+	pointer-events: none;
+}
+
+/* icon navbar ecra pequeno */
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #FFF;
+}
+
+
+
+
+
+/* titulo principal */
+.titulo_main, .description_main > h4 {
+	width: 100%;
+	text-align: center;
+}
+
+/* texto da pagina inicial */
+.description_main {
+	margin-top: 60px;
+	line-height: 30px;
+}
+
+
+/* links da pagina inicial */
+.secundary_item {
+	background-color: #2A2E26;
+	color: #fff;
+	padding: 15px;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+
+
+/* listas de material das experiencias */
+.material> ul> li, .montagem> ul> li {
+	list-style-type: disc;
+	padding-left: 10px;
+}
+
+/* montagem parte title */
+.montagem span.parte {
+	font-style: italic;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+iframe {
+    display:block;
+    margin: 0 auto;
+}
+
+

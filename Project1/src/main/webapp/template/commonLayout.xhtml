@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      >
+
+	<h:head>
+		<h:outputStylesheet library="css" name="bootstrap.min.css" />  
+		<h:outputStylesheet library="css" name="bootstrap-theme.min.css" /> 
+		<h:outputStylesheet library="css" name="main.css" /> 
+		
+		<h:outputScript library="js" name="JQuery.js" />
+		<h:outputScript library="js" name="JQuery-migrate.js" />
+		<h:outputScript library="js" name="tematicas.js" />
+		
+	</h:head>
+    
+    <h:body>
+
+	<div id="page">
+		
+		<div id="header">
+			<ui:insert name="header" >
+				<ui:include src="/template/commonHeader.xhtml" />
+			</ui:insert>
+	    </div>
+	    
+	    <div class="row">
+		    <div class="col-md-3">
+			    	<ui:insert name="footer" >
+			    		<ui:include src="/template/commonNavigation.xhtml" />
+			    	</ui:insert>
+		    	</div>
+		     <div class="col-md-9">
+			   	<ui:insert name="content" >
+			   		<ui:include src="/template/commonContent.xhtml" />
+			   	</ui:insert>
+		    </div>
+			    
+		    
+    	</div>
+    </div>
+    
+    </h:body>
+
+</html>

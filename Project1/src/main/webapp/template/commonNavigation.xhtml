@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+<body>
+	<ui:composition>
+
+		
+			<div class="opçoes_temas">
+				<ul>
+					<li>
+						<div>
+							<div class="topico leftSideHeading">
+								<a id="lista_som" class="topico" href="#">Som, Luz e Materiais</a>
+							</div>
+							<div>
+								<ul class="lista lista_som">
+									<li><h:link value="Kit de ótica" outcome="/pages/Som/KitOptica" /></li>
+									<li><h:link value="Tubos de som" outcome="/pages/Som/Tubos" /></li>
+									<li><h:link value="A cor branca colorida" outcome="/pages/Som/Disco" /></li>
+									<li><h:link value="O BI dos elementos" outcome="/pages/Som/BIElementos" /></li>
+																		
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div class="topico leftSideHeading">
+								<a id="lista_mecanica" class="topico" href="#">Mecânica e Energia</a>
+							</div>
+							<div>
+							<ul class="lista lista_mecanica">
+								<li><h:link value="Densidade com esferas"
+										outcome="/pages/Mecanica/Esferas" /></li>
+								<li><h:link value="Águia - Centro de massa"
+										outcome="/pages/Mecanica/Aguia" /></li>
+								<li><h:link value="Berço de Newton"
+										outcome="/pages/Mecanica/Newton" /></li>
+								<li><h:link value="Esferas de aço para colisão"
+										outcome="/pages/Mecanica/Colisao" /></li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div class="topico leftSideHeading">
+								<a id="lista_electricidade" class="topico" href="#">Eletricidade e Magnetismo</a>
+							</div>
+							<div>
+								<ul class="lista lista_electricidade">
+									<li><h:link value="Energy Ball" outcome="/pages/Magnetismo/EnergyBall" /></li>
+									<li><h:link value="Canhão magnético" outcome="/pages/Magnetismo/CanhaoMagnetico" /></li>
+									<li><h:link value="Lei de Lenz" outcome="/pages/Magnetismo/Lenz" /></li>
+									<li><h:link value="Piezoelétrico" outcome="/pages/Magnetismo/Piezoeletrico" /></li>
+									
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			
+		</div>
+
+	</ui:composition>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<body>
+	<ui:composition>
+
+		<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav ">
+				<li id="inicioLink" class="active"> <h:link value="Inicio" outcome="/pages/inicio/inicio" /></li>
+				<li id="tematicasLink"> <h:link value="Temáticas" outcome="/pages/Som/KitOptica" /></li>
+				<li id="contactosLink"> <h:link value="Contactos" outcome="/pages/Contactos/contactos" /></li>
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					
+					<li><p class="navbar-text">#{user.name}</p></li>
+				</ul>
+
+			</div>
+		</div>
+		</nav>
+
+	</ui:composition>
+</body>
+</html>
+
+

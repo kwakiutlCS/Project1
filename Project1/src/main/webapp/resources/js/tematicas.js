@@ -1,4 +1,5 @@
 $(function() {
+	
 	$(".lista").hide();    
 
 	var url = window.location.href;

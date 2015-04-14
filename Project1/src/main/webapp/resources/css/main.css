@@ -1,10 +1,13 @@
 
+/* cor fundo body */
 body {
 	background-color: #51504D;
 }
 
 
+/* aspecto geral links */
 a:active, a:hover, a:visited, a:link {
+	outline: 0px solid white;
 	text-decoration:none;
 }
 
@@ -13,6 +16,7 @@ a:active, a:hover, a:visited, a:link {
 }*/
 
 
+/* aspecto geral listas */
 ul>li {
 	list-style-type: none;
 }
@@ -127,7 +131,7 @@ figcaption{
 }
 
 /* margem entre seccoes de texto da experiencias */
-.experiencia .historia, .experiencia .material {
+.experiencia .historia, .experiencia .material, .experiencia .montagem {
 	margin-bottom: 50px;
 }
 

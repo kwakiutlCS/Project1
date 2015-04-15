@@ -224,9 +224,20 @@ nav.navbar-default.navbar {
 	font-size: 15px;
 }
 
+/* videos youtube */
 iframe {
     display:block;
     margin: 0 auto;
 }
 
 
+/* mapas dos contactos */
+.mapa{
+	width:400px;
+	height:400px;
+}
+
+.hiddenMap {
+	width: 1px;
+	height: 1px;
+}

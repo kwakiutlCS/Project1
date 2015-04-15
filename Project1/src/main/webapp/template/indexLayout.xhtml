@@ -11,9 +11,8 @@
 		<h:outputStylesheet library="css" name="bootstrap-theme.min.css" /> 
 		<h:outputStylesheet library="css" name="main.css" /> 
 		
-		<script type="text/javascript" src="JS/JQuery.js"> </script>
-		<script type="text/javascript" src="JS/JQuery-migrate.js"> </script>
-		<script type="text/javascript" src="JS/hello.js"> </script>
+		<h:outputScript library="js" name="JQuery.js" />
+		<h:outputScript library="js" name="JQuery-migrate.js" />
 		
 	</h:head>
     
@@ -31,7 +30,7 @@
 	    
 		     <div>
 			   	<ui:insert name="content" >
-			   		<ui:include src="/template/commonContent.xhtml" />
+			   		
 			   	</ui:insert>
 		    </div>
 			    

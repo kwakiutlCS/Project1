@@ -7,6 +7,8 @@
 /* cor fundo body */
 body {
 	background-image: url("/Project1/resources/images/bgtile.jpg");
+	background-repeat: repeat-x;
+	background-attachment: fixed;
 }
 /* aspecto geral links */
 a:active, a:hover, a:visited, a:link {
@@ -269,6 +271,7 @@ table th.local {
 	width: 150px;
 	text-align: center;
 }
+
 #divTable{
 	background-color: #fff;
 	margin-top:80px;

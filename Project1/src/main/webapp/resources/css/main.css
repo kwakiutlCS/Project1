@@ -1,11 +1,13 @@
-
+/*username*/
+#userName{
+	font-style: italic;
+	color:#FFF;
+	font-weight:bold;
+}
 /* cor fundo body */
 body {
-	background-color: #51504D;
-
+	background-image: url("/Project1/resources/images/bgtile.jpg");
 }
-
-
 /* aspecto geral links */
 a:active, a:hover, a:visited, a:link {
 	outline: 0px solid white;
@@ -22,10 +24,10 @@ ul>li {
 	list-style-type: none;
 }
 
-/*.container-fluid> div.navbar-default {
-	background: #6A943F;
-}*/
-
+/*container-fluid */
+.container-fluid{
+	padding:0 60px;
+}
  /*menu lateral titulo */
 .leftSideHeading {
 	background: #6A943F;
@@ -207,11 +209,12 @@ nav.navbar-default.navbar {
 
 /* links da pagina inicial */
 .secundary_item {
-	background-color: #2A2E26;
+	background-color: #323232;
 	color: #fff;
 	padding: 15px;
 	line-height: 25px;
 	margin-bottom: 10px;
+	opacity: 0.7;
 }
 
 
@@ -248,21 +251,25 @@ iframe, video {
 	display: block;
 }
 
-div.container>table {
+table {
 	margin: auto;
 }
 
-div.container>table td {
+table td {
 	padding: 5px;
 }
 
 
 
-div.container > table td.instituicao {
+table td.instituicao {
 	width: 220px;
 }
 
-div.container > table th.local {
+table th.local {
 	width: 150px;
 	text-align: center;
+}
+#divTable{
+	background-color: #fff;
+	margin-top:80px;
 }

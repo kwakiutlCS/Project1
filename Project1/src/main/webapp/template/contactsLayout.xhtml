@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"   
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
 	<h:outputStylesheet library="css" name="bootstrap.min.css" />
@@ -14,34 +13,34 @@
 	<h:outputScript library="js" name="JQuery.js" />
 	<h:outputScript library="js" name="JQuery-migrate.js" />
 	<h:outputScript library="js" name="contactos.js" />
-	<ui:insert name="extra_head" >
-	
+	<ui:insert name="extra_head">
+
 	</ui:insert>
-	
+
 </h:head>
 
 <h:body>
 
 
-	<div id="page">
-		
+	<div id="page" class="container-fluid">
+
 		<div id="header">
-			<ui:insert name="header" >
+			<ui:insert name="header">
 				<ui:include src="/template/commonHeader.xhtml" />
 			</ui:insert>
-	    </div>
-	    
-	    
-		     <div class="container">
-			   	<ui:insert name="content" >
-			   		
-			   	</ui:insert>
-		    </div>
-			    
-		    
-    	</div>
-    
-    
-    </h:body>
+		</div>
+
+
+		<div class="container" id="divTable">
+			<ui:insert name="content">
+
+			</ui:insert>
+		</div>
+
+
+	</div>
+
+
+</h:body>
 
 </html>

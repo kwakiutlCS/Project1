@@ -14,7 +14,10 @@
 	<h:outputScript library="js" name="JQuery.js" />
 	<h:outputScript library="js" name="JQuery-migrate.js" />
 	<h:outputScript library="js" name="contactos.js" />
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<ui:insert name="extra_head" >
+	
+	</ui:insert>
+	
 </h:head>
 
 <h:body>
@@ -29,7 +32,7 @@
 	    </div>
 	    
 	    
-		     <div>
+		     <div class="container">
 			   	<ui:insert name="content" >
 			   		
 			   	</ui:insert>

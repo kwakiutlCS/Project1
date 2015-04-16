@@ -4,18 +4,19 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 
-    
-
 <h:body>
-
 	<ui:composition template="/template/contactsLayout.xhtml">
+	<ui:define name="extra_head">
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+	</ui:define>
 		<ui:define name="content">
-			<article id="container">
+			
 				<table>
 					<thead>
 					<tr>
 						<th>Instituição</th>
 						<th>Website</th>
+						<th>Localização</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -23,82 +24,49 @@
 						
 							<td>Exploratório Coimbra</td>
 							<td><h:outputLink value="http://www.exploratorio.pt/">http://www.exploratorio.pt</h:outputLink></td>
-							<td><a href="#" class="mapShow" data-map="1">localização</a></td>
-						</tr>
-						<tr>
-							<td colspan="3">
-							<div class="mapa" id="mapa1" />
+							<td><a href="#" class="mapShow" data-map="0"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
+							<td rowspan="7">
+								<div id="mapDiv" class="mapa" />
 							</td>
 						</tr>
 						<tr>
 							<td>Constância</td>
 							<td><h:outputLink value="http://constancia.cienciaviva.pt">http://constancia.cienciaviva.pt</h:outputLink></td>
-							<td><a href="#" class="mapShow" data-map="2">localização</a></td>
-						</tr>
-						<tr>
-							<td colspan="3">
-							<div class="mapa" id="mapa2" />
-							</td>
+							<td><a href="#" class="mapShow" data-map="1"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
 						</tr>
 						<tr>
 							<td>Planetário do Porto</td>
 							<td><h:outputLink value="http://www.astro.up.pt">http://www.astro.up.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="3">localização</a></td>
-						</tr>
-						<tr>
-							<td colspan="3">
-							<div class="mapa" id="mapa3" />
-							</td>
+							<td><a href="" class="mapShow" data-map="2"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
 						</tr>
 						<tr>
 							<td>Bragança</td>
 							<td><h:outputLink value="http://www.braganca.cienciaviva.pt">http://www.braganca.cienciaviva.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="4">localização</a></td>
+							<td><a href="" class="mapShow" data-map="3"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
 						</tr>
-						<tr>
-							<td colspan="3">
-							<div class="mapa" id="mapa4" />
-							</td>
-						</tr>
-		
 						<tr>
 							<td>Algarve</td>
 							<td><h:outputLink value="http://www.ccvalg.pt">http://www.ccvalg.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="5">localização</a></td>
-						</tr>
-						<tr>
-							<td colspan="3">
-							<div class="mapa" id="mapa5" />
-							</td>
+							<td><a href="" class="mapShow" data-map="4"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
 						</tr>
 						<tr>
 							<td>Pavilhão do Conhecimento</td>
 							<td><h:outputLink value="http://www.pavconhecimento.pt">http://www.pavconhecimento.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="6">localização</a></td>
-						</tr>
-						<tr>
-							<td colspan="3">
-							<div class="mapa" id="mapa6" />
-</td>
+							<td><a href="" class="mapShow" data-map="5"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
 						</tr>
 						
 						<tr>
 							<td>Açores</td>
 							<td><h:outputLink value="http://expolab.centrosciencia.azores.gov.pt">http://expolab.centrosciencia.azores.gov.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="7">localização</a></td>
+							<td><a href="" class="mapShow" data-map="6"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
 						</tr>
-						<tr>
-							<td colspan="3">
-							<div class="mapa" id="mapa7" />
-							</td>
-						</tr>
+						
 						
 					</tbody>
 					
 					
 				</table>	
-			</article>
-
+			
 
 
 

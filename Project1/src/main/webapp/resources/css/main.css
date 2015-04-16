@@ -93,7 +93,7 @@ ul.lista > li {
 
 
 /* fundo branco do texto(descricao) */
-div.experiencia, div.main {
+div.experiencia, div.main, div.container {
 	background-color: #fff;
         border: 1px solid #d1d1aa;
 	box-shadow: 0px 0px 1px 1px #d1d1aa;
@@ -237,7 +237,22 @@ iframe {
 	height:400px;
 }
 
-.hiddenMap {
-	width: 1px;
-	height: 1px;
+.gmapsIcon {
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	display: block;
+}
+
+div.container>table {
+	margin: auto;
+}
+
+div.container>table td	{
+	padding: 5px;
+}
+
+div.container>table td>a {
+	display: block;
+	margin: auto;
 }

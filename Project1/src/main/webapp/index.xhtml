@@ -47,14 +47,14 @@
 					<p>Introduza o nome</p>
 					<h:inputText id="username" title="My name is: "
 						value="#{user.name}" required="true"
-						requiredMessage="Error: A name is required." maxlength="25" />
+						requiredMessage="Por favor insira o nome" maxlength="25" />
 					<p></p>
 					<h:commandButton id="submit" value="Submit" action="/pages/inicio/inicio"
 						styleClass="btn btn-primary" />
 
 
 				</h:form>
-				<div class="messagecolor">
+				<div class="errorMessage">
 					<h:messages showSummary="true" showDetail="false"
 						errorStyle="color: #d20005" infoStyle="color: blue" />
 				</div>

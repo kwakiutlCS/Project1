@@ -248,11 +248,17 @@ div.container>table {
 	margin: auto;
 }
 
-div.container>table td	{
+div.container>table td {
 	padding: 5px;
 }
 
-div.container>table td>a {
-	display: block;
-	margin: auto;
+
+
+div.container > table td.instituicao {
+	width: 220px;
+}
+
+div.container > table th.local {
+	width: 150px;
+	text-align: center;
 }

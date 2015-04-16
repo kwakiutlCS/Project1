@@ -32,9 +32,10 @@ ul>li {
 }
  /*menu lateral titulo */
 .leftSideHeading {
-	background: #6A943F;
+	background: #00508c;
 	line-height: 35px;
 	padding: 0px 10px;
+	opacity:0.7;
 }
 
 /*menu lateral link */
@@ -47,13 +48,13 @@ ul>li {
 
 /* menu lateral link (hover) */
 .leftSideHeading > a:hover {
-	color:#6A943F;
+	color:#00508c;
 	background-color: #fff;	
 }
 
 /* impede selecao da lista atual do menu navegacao */
 .leftSideHeading > a.currentList:hover {
-	background-color: #6A943F;
+	background-color: #00508c;
 	color: #fff;
 	cursor: default;
 }
@@ -61,7 +62,7 @@ ul>li {
 
 /* listas navegaçao */
 ul.lista {
-	border: 1px solid #6A943F;
+	border: 1px solid #00508c;
 	background-color: #fff;
 	
 }
@@ -81,17 +82,17 @@ ul.lista > li {
 
 
 
-/* A REVER */
-.opcoes_temas > ul > li, .menu_sessoes > ul > li, .menu_ideias > ul > li {
+/* bordo menu nav */
+.opcoes_temas > ul > li{
 	margin:10px 0;
-	box-shadow: 0px 0px 1px 1px #F00;
+	box-shadow: 0px 0px 1px 1px #ffffff;
 }
 
-.opcoes_temas > ul, .menu_sessoes > ul {
+.opcoes_temas > ul{
 	padding: 0;
 }
 
-.opcoes_temas, .menu_sessoes {
+.opcoes_temas {
 	margin-top: -10px;
 }
 
@@ -111,9 +112,10 @@ div.experiencia, div.main, div.container {
 }
 
 /* titulo experiencias */
-h1.titulo {
+h1 {
 	font-weight: 700;
 	text-align: center;
+	color:#6E6E72
 }
 
 /* figuras */
@@ -146,16 +148,18 @@ figcaption{
 
 /* titulos das seccoes de texto das experiencias */
 .experiencia h3 {
-	color: #E47D00;
+	color: #6E6E72;
 }
 
 
 
 /* barra da navegacao */
 nav.navbar-default.navbar {
-	background-color: #6A943F;
+	background-color: #00508c;
 	background-image: none;
-	border: 1px solid #6A943F;
+	border: 1px solid #222;
+	opacity:0.7;
+	box-shadow: 0px 0px 1px 1px #ffffff;
 }
 
 /* links da barra */
@@ -170,7 +174,7 @@ nav.navbar-default.navbar {
 /* links da barra (hover) */
 .navbar-default ul.navbar-nav > li > a:hover {
 	background-color: #fff;
-	color: #6A943F;
+	color: #00508c;
 }
 
 /* link activo da barra de navegacao */
@@ -180,7 +184,7 @@ nav.navbar-default.navbar {
 
 /* override do bootstrap (link activo) */
 .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #6A943F;
+	color: #00508c;
 	background-color: #fff;
 	background-image: none;
 	box-shadow: none;
@@ -192,31 +196,30 @@ nav.navbar-default.navbar {
 	background-color: #FFF;
 }
 
-
-
-
-
 /* titulo principal */
 .titulo_main, .description_main > h4 {
 	width: 100%;
 	text-align: center;
+	color:#6E6E72;
 }
-
+.description_main > h4{
+	margin-bottom:25px;
+}
 /* texto da pagina inicial */
 .description_main {
-	margin-top: 60px;
+	margin-top: 35px;
 	line-height: 30px;
 }
 
-
 /* links da pagina inicial */
 .secundary_item {
-	background-color: #323232;
+	background-color: #303e47;
 	color: #fff;
 	padding: 15px;
-	line-height: 25px;
+	line-height: 30px;
 	margin-bottom: 10px;
-	opacity: 0.7;
+	font-size:20px;
+	opacity:0.7;
 }
 
 
@@ -231,6 +234,7 @@ nav.navbar-default.navbar {
 	font-style: italic;
 	font-weight: 700;
 	font-size: 15px;
+	color:#6E6E72;
 }
 
 /* videos youtube */
@@ -271,7 +275,10 @@ table th.local {
 	width: 150px;
 	text-align: center;
 }
-
+th{
+	font-size:18px;
+	color:#6E6E72;
+}
 #divTable{
 	background-color: #fff;
 	margin-top:80px;

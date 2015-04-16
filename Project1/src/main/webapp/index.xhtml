@@ -1,33 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
 
-	<h:head>
-	<title> Bem vindo</title>
-	<h:outputStylesheet library="css" name="bootstrap.min.css" />  
-	<h:outputStylesheet library="css" name="bootstrap-theme.min.css" /> 
-	<h:outputStylesheet library="css" name="main.css" /> 
-		
-	<h:outputScript library="js" name="JQuery.js" />
-	<h:outputScript library="js" name="JQuery-migrate.js" />
-	
-	</h:head>
-	
-	<h:body>
+<h:head>
+
+	<h:outputStylesheet library="css" name="index.css" />
+	<title>Bem Vindo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Bootstrap -->
+	<link
+		href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+		rel="stylesheet" />
+
+
+
+</h:head>
+<h:body>
+
+	<audio class="som" controls="">
+		<source src="/Project1/resources/audio/Chopin.ogg" type="audio/ogg" />
+		<source src="/Project1/resources/audio/Chopin.mp3" type="audio/mpeg" />
+		O seu navegador não suporta áudio em HTML5, atualize-o.
+	</audio>
 	<div class="container">
-	<div class="row">
-	<div class="col-md-6 col-md-offset-3">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 panel panel-default">
+
+				<h1 class="margin-base-vertical"></h1>
+
+				<blockquote>
+
+					<p>Os progressos obtidos por meio do ensino são lentos,</p>
+					<p>já os obtidos por meio de exemplos são mais imediatos e
+						eficazes.</p>
+					<footer>
+						<cite class="italic">Séneca</cite>
+					</footer>
+
+				</blockquote>
+
+				<h:form>
+					<h:graphicImage id="im" url="#{resource['images:icon.gif']}"
+						alt="Icon" />
+					<h2>Bem vindo ao mundo da física!</h2>
+					<p>Introduza o nome</p>
+					<h:inputText id="username" title="My name is: "
+						value="#{user.name}" required="true"
+						requiredMessage="Error: A name is required." maxlength="25" />
+					<p></p>
+					<h:commandButton id="submit" value="Submit" action="/pages/inicio/inicio"
+						styleClass="btn btn-primary" />
+
+
+				</h:form>
+				<div class="messagecolor">
+					<h:messages showSummary="true" showDetail="false"
+						errorStyle="color: #d20005" infoStyle="color: blue" />
+				</div>
+			</div>
+			<!-- //main content -->
+		</div>
+		<!-- //row -->
 	</div>
-	</div>
-	
-	</div>
-		<h:form>
-		<h2>Bem vindo! Introduza o nome:</h2>
-		<h:inputText id="username" styleClass="caixaTexto" value="#{user.name}" />
-		
-		<h:commandButton id="submit" styleClass="submitButton" action="/pages/inicio/inicio" value="Entrar" />
-		</h:form>
-		
-	</h:body>
+	<!-- //container -->
+</h:body>
 </html>
+

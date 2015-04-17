@@ -90,7 +90,7 @@ ul.lista > li {
 
 
 /* fundo branco do texto(descricao) */
-div.experiencia, article.main, div.container {
+article.experiencia, article.main, div.container {
 	background-color: #fff;
         border: 1px solid #d1d1aa;
 	box-shadow: 0px 0px 1px 1px #d1d1aa;
@@ -191,11 +191,12 @@ footer {
   background: #00508c;
   opacity: 0.7;
   color: white;
-  padding: 4px 30px;
+  height: 35px;
   border: 1px solid white;
   border-radius: 4px 4px 0 0;
   text-align: right;
-  
+  line-height: 35px;
+  padding: 0 30px;
 }
 
 /* titulo principal */
@@ -282,7 +283,7 @@ th{
 
 #divTable {
 	background-color: #fff;
-	margin-top:80px;
+	margin-top:54px;
+	margin-bottom: 50px;
 }
-
 

@@ -1,10 +1,4 @@
-html {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
+/*características geral da página*/
 body {
 	background-image: url("/Project1/resources/images/bgtile.jpg");
 	padding-top: 20px;
@@ -12,7 +6,7 @@ body {
 	font-family: "Open Sans", serif;
 	text-align: center;
 }
-
+/*ícon*/
 img {
 	display: block;
 	margin: auto;
@@ -24,13 +18,13 @@ img {
 	height: 200px;
 	border-radius: 150px;
 }
-
+/*citação*/
 blockquote {
 	background: #f9f9f9;
 	border-left: 10px solid #ccc;
 	line-height: 30px;
 	padding: 1% 4%;
-	quotes: "\201C" "\201D" "\2018" "\2019";
+	quotes: "\201C" ;
 }
 
 blockquote:before {
@@ -45,38 +39,31 @@ blockquote:before {
 blockquote p {
 	display: inline;
 }
-
-#row {
-	background: #4682B4
-}
-
-#som {
-	padding: 0% 4%;
-}
-
-h2 {
-	font-family: "Abel", Arial, sans-serif;
-	font-weight: 200;
-	font-size: 30px;
-	background-color: #8fb5d3;
-	padding: 1% 4%;
-}
-
 cite {
 	text-align: right;
 	display: block;
 }
-
 .italic {
 	font-style: italic;
 }
-/* Override B3 .panel adding a subtly transparent background */
+
+/* formatação frase boas vindas */
+h2 {
+	background-color: #8fb5d3;
+	padding: 1% 4%;
+}
+
+/* Override B3 .panel transfomando o fundo transparente */
 .panel {
 	background-color: rgba(255, 255, 255, 0.9);
 	opacity: 0.7;
 	padding-bottom: 20px;
 }
-
-.margin-base-vertical {
-	margin: 20px 0;
+/*formatação da mensagem de erro*/
+.errorMessage>ul>li>{
+	margin-top:15px;
+	list-style-type:none;
+}
+.errorMessage>ul{
+	
 }

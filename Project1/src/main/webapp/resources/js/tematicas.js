@@ -1,12 +1,12 @@
 $(function() {
-	
+//fecha todas as listas de navegação	
 	$(".lista").hide();    
-
+//detecta o tema da pagina
 	var url = window.location.href;
 	var res=url.split("/");
 	var pos=res.length-2;
 	
-
+//mostra o seleccionado
 	if (res[pos]==="Mecanica"){
 		$(".lista_mecanica").show();
 		$("#lista_mecanica").addClass("currentList");
@@ -19,7 +19,7 @@ $(function() {
 		$(".lista_electricidade").show();
 		$("#lista_electricidade").addClass("currentList");
 	}
-	
+//esconder e mostrar as listas 	
 	$("#lista_som").click(function(e) {
 		if (!$(this).hasClass("currentList")) {
 			$(".currentList").removeClass("currentList");		
@@ -28,8 +28,8 @@ $(function() {
 			$(".lista_som").slideDown();
 		}
 		e.preventDefault();
-		
 	});
+	
 	$("#lista_mecanica").click(function(e) {
 		if (!$(this).hasClass("currentList")) {
 			$(".currentList").removeClass("currentList");		
@@ -48,8 +48,7 @@ $(function() {
 		}
 		e.preventDefault();
 	});
-
-    
+//actualização da lista  
 	$(".active").removeClass("active");
 	$("#tematicasLink").addClass("active");
 	

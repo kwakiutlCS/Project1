@@ -1,29 +1,29 @@
 //google maps initialization
+//lista de marcadores
 var markers = [];
+//lista de zoom especifico de cada local
 var zoom = [16,13,16,17,14,16,12];
+//mapa
 var mainMap;
 
-
-
 $(function() {
+//	actualizaçao do link
 	$(".active").removeClass("active");
 	$("#contactosLink").addClass("active");
 
 	$(".mapShow").on("click", function(e) {
+		//mapa correspondente ao ponteiro
 		var mapNumber = $(this).data("map");
+		//actualizaçao do mapa
 		mainMap.panTo(markers[mapNumber].getPosition());
 		mainMap.setZoom(zoom[mapNumber]);
 		e.preventDefault();
 	});
-
 	initialize();
-
 });
 
-
-
-
 function initialize() {
+	//lista de coordenadas
 	var exploratorio = {
 			pos:new google.maps.LatLng(40.197369,-8.430208),
 	};
@@ -45,10 +45,11 @@ function initialize() {
 	var acores = {
 			pos:new google.maps.LatLng(37.75465549744625,-25.558381118766388),
 	};
-
+//	guardar as coordenadas no array
 	var locals = [exploratorio, constancia, planetario, braganca, algarve, pavilhao, acores];
-
+//	inicializaçao do mapa
 	var exploratorioMap = {
+			// primeira posição do mapa ->exploratorio
 			center: exploratorio.pos,
 			zoom:16,
 			mapTypeId:google.maps.MapTypeId.ROADMAP,
@@ -57,7 +58,7 @@ function initialize() {
 	};
 	mainMap = new google.maps.Map($("#mapDiv")[0], exploratorioMap); 
 
-	// adds a marker on the map
+	// adiciona os marcadores ao mapa, percorrendo o array dos marcadores definido
 	for (var i = 0; i < locals.length; i++) {
 		markers.push(new google.maps.Marker({
 			position:locals[i].pos,

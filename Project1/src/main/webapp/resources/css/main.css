@@ -16,11 +16,6 @@ a:active, a:hover, a:visited, a:link {
 	text-decoration:none;
 }
 
-/*span.headingLink {
-	color: #bbb;
-}*/
-
-
 /* aspecto geral listas */
 ul>li {
 	list-style-type: none;
@@ -59,12 +54,10 @@ ul>li {
 	cursor: default;
 }
 
-
 /* listas navegaçao */
 ul.lista {
 	border: 1px solid #00508c;
 	background-color: #fff;
-	
 }
 
 /* elementos da lista */
@@ -78,9 +71,6 @@ ul.lista > li > a:hover {
 ul.lista > li {
 	margin: 8px 0 8px -15px;
 }
-
-
-
 
 /* bordo menu nav */
 .opcoes_temas > ul > li{
@@ -150,8 +140,6 @@ figcaption{
 .experiencia h3 {
 	color: #6E6E72;
 }
-
-
 
 /* barra da navegacao */
 nav.navbar-default.navbar {
@@ -256,7 +244,7 @@ iframe, video {
 	margin: auto;
 	display: block;
 }
-
+/*tabela dos parceiros*/
 table {
 	margin: auto;
 }
@@ -264,8 +252,6 @@ table {
 table td {
 	padding: 5px;
 }
-
-
 
 table td.instituicao {
 	width: 220px;

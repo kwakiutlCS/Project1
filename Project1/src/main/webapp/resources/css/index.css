@@ -60,10 +60,8 @@ h2 {
 	padding-bottom: 20px;
 }
 /*formatação da mensagem de erro*/
-.errorMessage>ul>li>{
-	margin-top:15px;
-	list-style-type:none;
-}
-.errorMessage>ul{
-	
+.errorMessage>u l{
+  padding: 0;
+  list-style-type: none;
+  margin-top: 20px;
 }

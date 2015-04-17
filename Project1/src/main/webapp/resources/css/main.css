@@ -6,7 +6,7 @@
 }
 /* cor fundo body */
 body {
-	background-image: url("/Project1/resources/images/bgtile.jpg");
+	background-image: url("../resources/images/bgtile.jpg");
 	background-repeat: repeat-x;
 	background-attachment: fixed;
 	height: 100%;

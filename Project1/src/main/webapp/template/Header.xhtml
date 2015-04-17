@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
 <body>
 	<ui:composition>
-<!--  -->
+
 		<nav class="navbar navbar-default" role="navigation">
-		
+
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#bs-example-navbar-collapse-1">
@@ -22,18 +21,21 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav ">
-				<li id="inicioLink" class="active"> <h:link value="Inicio" outcome="/pages/inicio/inicio" /></li>
-				<li id="tematicasLink"> <h:link value="Temáticas" outcome="/pages/Som/KitOptica" /></li>
-				<li id="contactosLink"> <h:link value="Parceiros" outcome="/pages/Contactos/contactos" /></li>
+					<li id="inicioLink" class="active"><h:link value="Inicio"
+							outcome="/pages/inicio/inicio" /></li>
+					<li id="tematicasLink"><h:link value="Temáticas"
+							outcome="/pages/Som/KitOptica" /></li>
+					<li id="contactosLink"><h:link value="Parceiros"
+							outcome="/pages/Contactos/contactos" /></li>
 
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					
+
 					<li><p id="userName" class="navbar-text">#{user.name}</p></li>
 				</ul>
 
 			</div>
-		
+
 		</nav>
 
 	</ui:composition>

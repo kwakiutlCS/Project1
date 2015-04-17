@@ -7,13 +7,13 @@
 
 <h:body>
 
-	<ui:composition template="/template/indexLayout.xhtml">
+	<ui:composition template="/template/inicioLayout.xhtml">
 		<ui:define name="content">
 			<div class="row">
 				<div class="col-md-9">
-					<div class="main">
-						<h1 class="titulo_main"> Física Experimental </h1>
-						
+					<article class="main">
+						<h1 class="titulo_main">Física Experimental</h1>
+
 						<div class="description_main">
 							<h4>DESCRIÇÃO DO PROJETO</h4>
 							Este projeto pretende levar a Física às escolas básicas e
@@ -22,11 +22,11 @@
 							dia-a-dia. O projeto será executado em colaboração com a Secção
 							de Divulgação Científica do Instituto de Física dos Materiais da
 							Universidade do Porto (IFIMUP-IN), associando quer os materiais
-							de divulgação, quer as aplicações tecnológicas desse Centro.
-							 A tipologia das atividades que a seguir se apresentam, a
-							realizar com alunos das escolas, inserem-se numa perspetiva de
-							comunicação científica interativa do tipo não-formal, potenciando
-							a participação ativa dos alunos. Destaca-se a:
+							de divulgação, quer as aplicações tecnológicas desse Centro. A
+							tipologia das atividades que a seguir se apresentam, a realizar
+							com alunos das escolas, inserem-se numa perspetiva de comunicação
+							científica interativa do tipo não-formal, potenciando a
+							participação ativa dos alunos. Destaca-se a:
 
 							<ol>
 								<li>Orientação de alunos de clubes de ciências, reforçada
@@ -61,28 +61,31 @@
 							capacidades), com repercussão numa melhor aprendizagem das
 							Ciências Físico-Naturais.
 						</div>
-					</div>
+					</article>
 				</div>
-				<div class="col-md-3 secundary">
-					<div style="padding: 0 0 15px 0">
-					<h:graphicImage url="/resources/images/ciencia.JPG" alt="Imagem de ciência" styleClass="img-responsive" />
-					
-						
-					</div>
-					<div class="secundary_item">
+				<aside class="col-md-3 secundary">
+					<section style="padding: 0 0 15px 0">
+						<h:graphicImage url="/resources/images/ciencia.JPG"
+							alt="Imagem de ciência" styleClass="img-responsive" />
+
+
+					</section>
+					<section class="secundary_item">
 						<h3>Links Úteis</h3>
 						<ul>
-							<li><h:outputLink value="http://www.cienciahoje.pt/"> Ciência Hoje </h:outputLink> </li>
-							<li><h:outputLink value="http://sigarra.up.pt/fcup/pt/web_page.inicial"> Faculdade
-									de Ciências </h:outputLink> </li>
+							<li><h:outputLink value="http://www.cienciahoje.pt/"> Ciência Hoje </h:outputLink>
+							</li>
+							<li><h:outputLink
+									value="http://sigarra.up.pt/fcup/pt/web_page.inicial"> Faculdade
+									de Ciências </h:outputLink></li>
 						</ul>
 
-					</div>
+					</section>
 
-				</div>
+				</aside>
 			</div>
 		</ui:define>
-		
+
 	</ui:composition>
 
 </h:body>

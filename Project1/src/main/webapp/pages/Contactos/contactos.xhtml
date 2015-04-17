@@ -5,68 +5,80 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:body>
-	<ui:composition template="/template/contactsLayout.xhtml">
-	<ui:define name="extra_head">
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
-	</ui:define>
+	<ui:composition template="/template/parceirosLayout.xhtml">
 		<ui:define name="content">
-			
-				<table>
-					<thead>
+
+			<table>
+				<thead>
 					<tr>
 						<th>Instituição</th>
 						<th>Website</th>
 						<th class="local">Localização</th>
 					</tr>
-					</thead>
-					<tbody>
-						<tr>
-						
-							<td class="instituicao">Exploratório Coimbra</td>
-							<td><h:outputLink value="http://www.exploratorio.pt/">http://www.exploratorio.pt</h:outputLink></td>
-							<td><a href="#" class="mapShow" data-map="0"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
-							<td rowspan="7">
-								<div id="mapDiv" class="mapa" />
-							</td>
-						</tr>
-						<tr>
-							<td class="instituicao">CCV Constância</td>
-							<td><h:outputLink value="http://constancia.cienciaviva.pt">http://constancia.cienciaviva.pt</h:outputLink></td>
-							<td><a href="#" class="mapShow" data-map="1"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
-						</tr>
-						<tr>
-							<td class="instituicao">Planetário do Porto</td>
-							<td><h:outputLink value="http://www.astro.up.pt">http://www.astro.up.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="2"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
-						</tr>
-						<tr>
-							<td class="instituicao">CCV Bragança</td>
-							<td><h:outputLink value="http://www.braganca.cienciaviva.pt">http://www.braganca.cienciaviva.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="3"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
-						</tr>
-						<tr>
-							<td class="instituicao">CCV Algarve</td>
-							<td><h:outputLink value="http://www.ccvalg.pt">http://www.ccvalg.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="4"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
-						</tr>
-						<tr>
-							<td class="instituicao">Pavilhão do Conhecimento</td>
-							<td><h:outputLink value="http://www.pavconhecimento.pt">http://www.pavconhecimento.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="5"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
-						</tr>
-						
-						<tr>
-							<td class="instituicao">CCV Açores</td>
-							<td><h:outputLink value="http://expolab.centrosciencia.azores.gov.pt">http://expolab.centrosciencia.azores.gov.pt</h:outputLink></td>
-							<td><a href="" class="mapShow" data-map="6"><h:graphicImage styleClass="gmapsIcon" url="/resources/images/gmaps.png" alt="localizaçao" /></a></td>
-						</tr>
-						
-						
-					</tbody>
-					
-					
-				</table>	
-			
+				</thead>
+				<tbody>
+					<tr>
+
+						<td class="instituicao">Exploratório Coimbra</td>
+						<td><h:outputLink value="http://www.exploratorio.pt/">http://www.exploratorio.pt</h:outputLink></td>
+						<td><a href="#" class="mapShow" data-map="0"><h:graphicImage
+									styleClass="gmapsIcon" url="/resources/images/gmaps.png"
+									alt="localizaçao" /></a></td>
+						<td rowspan="7">
+							<div id="mapDiv" class="mapa" />
+						</td>
+					</tr>
+					<tr>
+						<td class="instituicao">CCV Constância</td>
+						<td><h:outputLink value="http://constancia.cienciaviva.pt">http://constancia.cienciaviva.pt</h:outputLink></td>
+						<td><a href="#" class="mapShow" data-map="1"><h:graphicImage
+									styleClass="gmapsIcon" url="/resources/images/gmaps.png"
+									alt="localizaçao" /></a></td>
+					</tr>
+					<tr>
+						<td class="instituicao">Planetário do Porto</td>
+						<td><h:outputLink value="http://www.astro.up.pt">http://www.astro.up.pt</h:outputLink></td>
+						<td><a href="" class="mapShow" data-map="2"><h:graphicImage
+									styleClass="gmapsIcon" url="/resources/images/gmaps.png"
+									alt="localizaçao" /></a></td>
+					</tr>
+					<tr>
+						<td class="instituicao">CCV Bragança</td>
+						<td><h:outputLink value="http://www.braganca.cienciaviva.pt">http://www.braganca.cienciaviva.pt</h:outputLink></td>
+						<td><a href="" class="mapShow" data-map="3"><h:graphicImage
+									styleClass="gmapsIcon" url="/resources/images/gmaps.png"
+									alt="localizaçao" /></a></td>
+					</tr>
+					<tr>
+						<td class="instituicao">CCV Algarve</td>
+						<td><h:outputLink value="http://www.ccvalg.pt">http://www.ccvalg.pt</h:outputLink></td>
+						<td><a href="" class="mapShow" data-map="4"><h:graphicImage
+									styleClass="gmapsIcon" url="/resources/images/gmaps.png"
+									alt="localizaçao" /></a></td>
+					</tr>
+					<tr>
+						<td class="instituicao">Pavilhão do Conhecimento</td>
+						<td><h:outputLink value="http://www.pavconhecimento.pt">http://www.pavconhecimento.pt</h:outputLink></td>
+						<td><a href="" class="mapShow" data-map="5"><h:graphicImage
+									styleClass="gmapsIcon" url="/resources/images/gmaps.png"
+									alt="localizaçao" /></a></td>
+					</tr>
+
+					<tr>
+						<td class="instituicao">CCV Açores</td>
+						<td><h:outputLink
+								value="http://expolab.centrosciencia.azores.gov.pt">http://expolab.centrosciencia.azores.gov.pt</h:outputLink></td>
+						<td><a href="" class="mapShow" data-map="6"><h:graphicImage
+									styleClass="gmapsIcon" url="/resources/images/gmaps.png"
+									alt="localizaçao" /></a></td>
+					</tr>
+
+
+				</tbody>
+
+
+			</table>
+
 
 
 
